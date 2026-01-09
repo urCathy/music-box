@@ -10,11 +10,13 @@
 }
 
 .review-card {
+    position: relative;
     background-color: white;
     border-radius: 40px;
     min-width: 27%;
-    min-height: 300px;
+    min-height: 350px;
     padding: 10px 50px;
+
 }
 
 .review-card-title-container {
@@ -42,6 +44,11 @@
     font-size: 19px;
     margin: 5px;
     font-family: 'Hedvig Letters Serif', sans-serif;
+}
+
+.onbottom {
+    position: absolute;
+    bottom: 0;
 }
 
 .review-card-stars {

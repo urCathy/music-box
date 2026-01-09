@@ -1,0 +1,176 @@
+.mechanism-melody {
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    margin: 0 0 40px;
+    padding: 0;
+    position: absolute;
+    top: 2350px;
+    z-index: 11;
+}
+
+.mechanism-melody-player-container {
+    position: absolute;
+    width: 100%;
+    top: 2400px;
+    z-index: 11;
+    height: fit-content;
+    user-select: none;
+}
+
+.mechanism-melody-player-frame {
+    position: relative;
+    transform: translateX(-50%);
+    width: 50%;
+    height: fit-content;
+    left: 50%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.mechanism-melody-player-button {
+    padding: 20px;
+    width: 32px;
+    height: 32px;
+    background-color: #271710;
+    border: none;
+    border-radius: 70%;
+    overflow: visible;
+}
+
+.mechanism-melody-player-button:hover {
+    background-color: #E9A73E;
+}
+
+.mechanism-melody-player-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+    font-family: Cormorant, sans-serif;
+}
+
+.playfair-font{
+    font-family: Playfair, sans-serif;
+}
+
+.button-smaller {
+    padding: 15px;
+}
+
+.mechanism-melody-player-buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 80px;
+}
+
+.mechanism-melody-player-time {
+    position: absolute;
+    left: 63%;
+    top: 46%;
+    color: white;
+    font-family: "Hedvig Letters Serif", sans-serif;
+}
+
+/* Стили слайдера с адаптацией под каждый браузер */
+
+.mechanism-melody-player-line {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 30%;
+    height: 5px;
+    background-color: #271710;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%);
+    outline: none;
+    cursor: pointer;
+}
+
+/* Chrome / Safari / Edge (WEBKIT) */
+.mechanism-melody-player-line::-webkit-slider-runnable-track {
+    background-color: #271710;
+    height: 5px;
+    border-radius: 15px;
+}
+
+.mechanism-melody-player-line::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-color: #271710;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+    margin-top: -7.5px;
+}
+
+/* Firefox */
+.mechanism-melody-player-line::-moz-range-track {
+    background-color: #271710;
+    height: 5px;
+    border-radius: 15px;
+}
+
+.mechanism-melody-player-line::-moz-range-progress {
+    background-color: #271710;
+    height: 5px;
+    border-radius: 15px;
+}
+
+.mechanism-melody-player-line::-moz-range-thumb {
+    background-color: #271710;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+}
+
+/*  IE / EDGE */
+
+.mechanism-melody-player-line::-ms-track {
+    width: 100%;
+    height: 5px;
+    border-radius: 15px;
+
+    /* Прозрачные фейки вокруг ползунка */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.mechanism-melody-player-line::-ms-fill-lower {
+    background-color: #271710;
+    border-radius: 15px;
+}
+
+.mechanism-melody-player-line::-ms-fill-upper {
+    background-color: #271710;
+    border-radius: 15px;
+}
+
+.mechanism-melody-player-line::-ms-thumb {
+    background-color: #271710;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 70%;
+    cursor: pointer;
+}

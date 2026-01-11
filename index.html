@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="assets/images/logos/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/advantages.css">
+    <link rel="stylesheet" href="css/mechanism.css">
+    <link rel="stylesheet" href="css/buying.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/buying-modal.css">
+    <link rel="stylesheet" href="css/music-player.css">
+    <title>Music Box</title>
+</head>
+<body>
+    <section class="logo-section">
+        <img src="assets/images/logos/logoitog2.png" alt="logo" class="logo-center">
+        <model-viewer
+                class="logo-model"
+                alt="music box"
+                shadow-intensity="1"
+                src="assets/model/baletanimate1.glb"
+                autoplay
+                loading="eager"
+                camera-orbit="60deg 0 0"
+                camera-target="0 0 0"
+        ></model-viewer>
+        <p class="logo-top-text-title smooth-appear">Окунись</p>
+        <p class="logo-top-text-subtitle smooth-appear">в <span class="red">сказку</span></p>
+        <div class="logo-text-container">
+            <img src="assets/images/logos/logo-red.png" alt="logo" class="logo-img ellipse red smooth-appear">
+            <h1 class="logo-title">Шкатулка</h1>
+            <p class="logo-text">с музыкой</p>
+        </div>
+        <a href="#buying" class="logo-button">Купить</a>
+    </section>
+    <section class="advantages-section">
+        <h3 class="section-title advantages-title-positioning">Наши преимущества</h3>
+        <img class="mouse" src="assets/images/mouse-with-key.png" alt="mouse"/>
+        <img class="advantages-branch-img" alt="tree's branch" src="assets/images/branch.png"/>
+        <div class="advantages-toys-container">
+            <div class="advantages-toy-palette">
+                <img class="rope" alt="" src="assets/images/rope.png"/>
+                <img class="advantages-toy-palette-img shaking" alt="palette toy" src="assets/images/toys/palette3.png">
+                <p class="advantage-toy-title advantages-toy-palette-title">Ручная роспись</p>
+            </div>
+            <div class="advantages-toy-note">
+                <img alt="" src="assets/images/rope.png"/>
+                <img class="advantages-toy-note-img shaking" alt="note toy" src="assets/images/toys/note.png">
+                <p class="advantage-toy-title advantages-toy-note-title">Аутентичная музыка из&nbsp;балета И.П.&nbsp;Чайковского</p>
+            </div>
+            <div class="advantages-toy-gift">
+                <img class="rope" alt="" src="assets/images/rope.png"/>
+                <img class="advantages-toy-gift-img shaking" alt="palette toy" src="assets/images/toys/gift2.png">
+                <p class="advantage-toy-title advantages-toy-gift-title">Подарочная упаковка</p>
+            </div>
+        </div>
+        <div class="advantages-video">
+            <p class="section-title">Красота в деталях</p>
+            <video controls>
+                <source src="assets/video/presentation.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="mechanism-section">
+        <div class="mechanism-container">
+            <h3 class="section-title mechanism-title-positioning">Механизм</h3>
+            <div class="mechanism-background">
+                <img class="mechanism-window" src="assets/images/backgrounds/mechanism-window-bg.png" alt="window">
+                <img src="assets/images/logos/logoitog1.png" alt="logo" class="logo-center move-bottom">
+                <img class="gear-left gear" src="assets/images/gear1.png" alt="gear">
+                <img class="gear-right gear" src="assets/images/gear2.png" alt="gear">
+                <div class="moving-mouse-container">
+                    <img class="moving-mouse-rope" src="assets/images/rope.png" alt="">
+                    <img class="moving-mouse" src="assets/images/mych.png" alt=""/>
+                    <img class="moving-mouse-key" src="assets/images/kluch.png" alt=""/>
+                </div>
+
+                <img class="woods" src="assets/images/wood.png" alt="planks">
+                <div class="mechanism-description">
+                    <div class="mechanism-description-text ">
+                        <h5 class="mechanism-description-title">Основные части музыкальной шкатулки</h5>
+                        <p>
+                            Опорная плита<br>
+                            Заводной ключ<br>
+                            Металлический гребень<br>
+                            Цилиндр с зубцами
+                        </p>
+                    </div>
+                    <div class="mechanism-description-text hidden" id="key">
+                        <h5 class="mechanism-description-title">
+                            Заводной ключ
+                        </h5>
+                        <p>
+                            Он&nbsp;вставляется в&nbsp;специальную заводную втулку, которая через&nbsp;систему шестерён и&nbsp;храпового механизма бережно
+                            и&nbsp;постепенно взводит главную пружину, накапливая в&nbsp;ней потенциальную энергию.
+                        </p>
+                    </div>
+                    <div class="mechanism-description-text hidden" id="comb">
+                        <h5 class="mechanism-description-title">
+                            Металлический гребень
+                        </h5>
+                        <p>
+                            Это&nbsp;стальная пластина
+                            с&nbsp;рядом тщательно настроенных зубьев разной длины, каждый из&nbsp;которых подобен отдельному камертону, издающему строго определённую ноту.
+                        </p>
+                    </div>
+                    <div class="mechanism-description-text hidden" id="cylinder">
+                        <h5 class="mechanism-description-title">
+                            Цилиндр с зубцами
+                        </h5>
+                        <p>
+                            Это&nbsp;цилиндр, усеянный рядами крошечных металлических штифтов. Каждый штифт расположен
+                            с&nbsp;математической точностью, чтобы в&nbsp;строго определённый момент задеть нужный зубец на&nbsp;звучащем гребне, создавая звук.
+                        </p>
+                    </div>
+                    <div class="mechanism-description-text hidden" id="main">
+                        <h5 class="mechanism-description-title">
+                            Опорная плита
+                        </h5>
+                        <p>
+                            Массивная плита, сделанная из&nbsp;металла, улавливает слабые вибрации от&nbsp;зубьев гребенки и,&nbsp;резонируя, многократно усиливает их,&nbsp;превращая простые щелчки в&nbsp;звонкую, объёмную и&nbsp;певучую мелодию.
+                        </p>
+                    </div>
+
+                    <div class="mechanism-description-img">
+                        <img src="assets/images/mechanism/point.png" alt="music box main" class="main-point point" data-element="main">
+                        <img src="assets/images/mechanism/point.png" alt="music box comb" class="cylinder-point point" data-element="cylinder">
+                        <img src="assets/images/mechanism/point.png" alt="music box cylinder" class="comb-point point" data-element="comb">
+                        <img src="assets/images/mechanism/point.png" alt="music box key" class="key-point point" data-element="key">
+
+                        <img src="assets/images/mechanism/main.png" alt="" class="main mechanism-part darker">
+                        <img src="assets/images/mechanism/comb.png" alt="" class="comb mechanism-part darker">
+                        <img src="assets/images/mechanism/cylinder.png" alt="" class="cylinder mechanism-part darker">
+                        <img src="assets/images/mechanism/key.png" alt="" class="key mechanism-part darker">
+                    </div>
+
+                </div>
+                <h3 class="mechanism-melody">Послушай мелодию</h3>
+                <div class="mechanism-melody-player-container">
+                    <img class="mechanism-melody-player-frame" src="assets/images/audio-player/player.png" alt="">
+                    <p class="mechanism-melody-player-text">«Вальс цветов» <span class="playfair-font">-</span> П.И. Чайковский, «Щелкунчик»</p>
+                    <input type="range" id="progress" class="mechanism-melody-player-line" min="0" value="0">
+                    <p class="mechanism-melody-player-time" id="time">00:00</p>
+                    <div class="mechanism-melody-player-buttons">
+                        <audio src="assets/audio/audio.mp3" id="audio"></audio>
+                        <img class="mechanism-melody-player-button button-smaller" src="assets/images/audio-player/prev.svg" id="prev" alt="10 sec earlier"/>
+                        <img class="mechanism-melody-player-button" src="assets/images/audio-player/pause.svg" alt="pause" id="pause"/>
+                        <img class="mechanism-melody-player-button right50" src="assets/images/audio-player/play.svg" alt="play" id="play"/>
+                        <img class="mechanism-melody-player-button" src="assets/images/audio-player/again.svg" alt="again" id="again"/>
+                        <img class="mechanism-melody-player-button button-smaller" src="assets/images/audio-player/next.svg" alt="10 sec later" id="next"/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="buying-section">
+
+        <div class="buying-modal" id="modal">
+            <div class="buying-modal-content">
+                <h1 id="name"></h1>
+                <div class="buying-modal-content-container">
+                    <img id="modal-img" src="" alt="music box image">
+                    <div>
+                        <h3>Характеристики</h3>
+                        <div id="characteristic">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="buying-modal-logo-button" id="modal-buy-btn">Купить</div>
+            </div>
+        </div>
+
+        <img class="balka" src="assets/images/balka.png" alt="">
+        <img class="balka-rotated" src="assets/images/balka.png" alt="">
+        <div class="buying-container" id="buying">
+            <h3 class="section-title smaller">Выбери свою шкатулку</h3>
+            <div class="buying-goods-container">
+                <div class="buying-good-item">
+                    <div class="buying-good-item-images">
+                        <img class="buying-good-item-frame" src="assets/images/frame-and-bow.png" alt=""/>
+                        <img class="buying-good-item-image" src="assets/images/products/throne-icon.png" alt=""/>
+                    </div>
+                    <p class="buying-good-item-title">Адажио Алого Трона</p>
+                    <button class="buying-good-item-button" data-name="throne"><span class="number">15,000</span> рублей</button>
+                </div>
+                <div class="buying-good-item">
+                    <div class="buying-good-item-images">
+                        <img class="buying-good-item-frame" src="assets/images/frame-and-bow.png" alt=""/>
+                        <img class="buying-good-item-image" src="assets/images/products/skazka-icon.png" alt=""/>
+                    </div>
+                    <p class="buying-good-item-title">Сказка</p>
+                    <button class="buying-good-item-button" data-name="skazka"><span class="number">15,000</span> рублей</button>
+                </div>
+                <div class="buying-good-item">
+                    <div class="buying-good-item-images">
+                        <img class="buying-good-item-frame" src="assets/images/frame-and-bow.png" alt=""/>
+                        <img class="buying-good-item-image" src="assets/images/products/dance-icon.png" alt=""/>
+                    </div>
+                    <p class="buying-good-item-title">Танец в Изумрудной Роще</p>
+                    <button class="buying-good-item-button" data-name="dance"><span class="number">15,000</span> рублей</button>
+                </div>
+            </div>
+            <div class="section-title">
+                <h3 class="smaller">Преподнесите волшебство,</h3>
+                <h3 class="smaller to-the-right">не думая о коробке</h3>
+            </div>
+            <p class="buying-bottom-text smooth-appear">
+                Каждая шкатулка упакована в&nbsp;прочный подарочную упаковку с&nbsp;мягкими вкладышами&nbsp;&mdash; она доедет в&nbsp;целости и&nbsp;предстанет во&nbsp;всей красоте!
+            </p>
+            <div class="buying-gifts-imgs">
+                <img src="assets/images/mouse_with_gifts.png"  alt="mouse with gifts"/>
+                <img class="buying-gifts-imgs-branch" src="assets/images/branch2.png"  alt="branch"/>
+            </div>
+        </div>
+    </section>
+    <section class="FAQ-section">
+        <h3 class="section-title smaller">Истории волшебства!</h3>
+        <div class="review-cards-container">
+            <div class="review-card">
+                <img src="assets/images/reviews-icon/maria.png" alt="" class="review-card-icon"/>
+                <div class="review-card-title-container">
+                    <p class="review-card-title">Мария Иванова</p>
+                    <p class="review-card-text review-card-grey">15 декабря 2025</p>
+                </div>
+                <div class="review-card-stars">
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                </div>
+                <div class="review-card-text">
+                    <p>Эта музыкальная шкатулка просто волшебная! Недавно&nbsp;всей семьей посетили балет, хотели приобрести какой-нибудь памятный сувенир! И&nbsp;тут наткнулись на&nbsp;это&nbsp;чудо! Мелодия такая нежная и&nbsp;успокаивающая. Качество изготовления на&nbsp;высоте, каждый элемент проработан до&nbsp;мелочей. Отличный подарок для близких!</p>
+                </div>
+                <div class="review-card-text review-card-grey onbottom">
+                    <p>Куплена: "Сказка"</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="assets/images/reviews-icon/alexy.png" alt="" class="review-card-icon"/>
+                <div class="review-card-title-container">
+                    <p class="review-card-title">Алексей Петров</p>
+                    <p class="review-card-text review-card-grey">4 декабря 2025</p>
+                </div>
+                <div class="review-card-stars">
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/half-star.png" alt="" class="review-card-stars-img"/>
+                </div>
+                <div class="review-card-text">
+                    <p>
+                        Подарил жене на&nbsp;годовщину. Она в&nbsp;восторге!
+                        Шкатулка выглядит дорого, довольно тяжелая. Единственное, хотелось&nbsp;бы погромче звучание, но&nbsp;в&nbsp;целом покупкой очень довольны.
+                    </p>
+                </div>
+                <div class="review-card-text review-card-grey onbottom">
+                    <p>Куплена: «Адажио Алого Трона»</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="assets/images/reviews-icon/natalie.png" alt="" class="review-card-icon"/>
+                <div class="review-card-title-container">
+                    <p class="review-card-title">Наталья Айрапетян</p>
+                    <p class="review-card-text review-card-grey">8 марта 2025</p>
+                </div>
+                <div class="review-card-stars">
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                </div>
+                <div class="review-card-text">
+                    <p>
+                        Покупала шкатулку в&nbsp;подарок племяннице, но&nbsp;в&nbsp;итоге... купила
+                        и&nbsp;себе. Признаюсь, не&nbsp;удержалась. Это именно та&nbsp;магия, которой так не&nbsp;хватает в&nbsp;мире гаджетов и&nbsp;одноразовых вещей)
+                    </p>
+                </div>
+                <div class="review-card-text review-card-grey onbottom">
+                    <p>Куплена: «Танец в Изумрудной Роще»</p>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="assets/images/reviews-icon/olga.png" alt="" class="review-card-icon"/>
+                <div class="review-card-title-container">
+                    <p class="review-card-title">Ольга Крюкова</p>
+                    <p class="review-card-text review-card-grey">17 февраля 2025</p>
+                </div>
+                <div class="review-card-stars">
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                    <img src="assets/images/reviews-icon/star.png" alt="" class="review-card-stars-img"/>
+                </div>
+                <div class="review-card-text">
+                    <p>
+                        Я&nbsp;коллекционирую музыкальные механизмы, и&nbsp;эта&nbsp;шкатулка&nbsp;&mdash; не&nbsp;просто пополнение коллекции. Это&nbsp;её&nbsp;сердце. Часто бывает, что вещь красива, но&nbsp;бездушна. Здесь&nbsp;же&nbsp;&mdash; полная противоположность. Прдавец&nbsp;&mdash; общительный, ответил на&nbsp;все вопросы, аккуратно упаковал товар.
+                    </p>
+                </div>
+                <div class="review-card-text review-card-grey onbottom">
+                    <p>Куплена: «Адажио Алого Трона»</p>
+                </div>
+            </div>
+        </div>
+        <div class="questions-section">
+            <h3 class="section-title smaller">Часто задаваемые вопросы</h3>
+            <div class="questions-container">
+                <input class="faq-input" type="text" id="faq-input" placeholder="Поиск по вопросам..." />
+                <div class="faq-buttons">
+                    <button class="faq-button" data-category="all">Все вопросы</button>
+                    <button class="faq-button" data-category="about-product">О продукте</button>
+                    <button class="faq-button" data-category="guarantee">Гарантия</button>
+                    <button class="faq-button" data-category="delivery">Доставка</button>
+                </div>
+                <div class="questions-text-container">
+                    <div class="questions-item" data-category="about-product">
+                        <div class="questions-item-title">
+                            <p>Можно ли выбрать мелодию для шкатулки?</p>
+                            <button class="arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                        </div>
+                        <p class="questions-item-text hidden">Нет, в&nbsp;представленном продукте доступна только одна музыкальная композиция, а&nbsp;именно &laquo;Вальс цветов&raquo;, П.И. Чайковский, &laquo;Щелкунчик&raquo;.</p>
+                    </div>
+                    <div class="questions-item" data-category="about-product">
+                        <div class="questions-item-title" >
+                            <p>Из каких материалов изготовлена музыкальная шкатулка?</p>
+                            <button class="arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                        </div>
+                        <p class="questions-item-text hidden">Такая музыкальная шкатулка&nbsp;&mdash; это многослойная композиция классического сувенира. Её&nbsp;основу составляет прочный корпус, отлитый из&nbsp;цинкового сплава или стали, который служит
+                            и&nbsp;резонатором для&nbsp;мелодии. Эта металлическая основа покрывается прочным чёрным пластиком, имитирующим фактуру рельефной вязки, а&nbsp;затем украшается изящным золотым тиснением&nbsp;&mdash; тончайшей фольгой, вдавленной в&nbsp;поверхность под давлением и&nbsp;теплом.
+                            В&nbsp;центре этой изящной оправы вращается балерина, чье тонкое тело отлито из&nbsp;белого фарфора, а&nbsp;нежный пачка и&nbsp;акценты на&nbsp;костюме сверкают позолотой, нанесённой вручную поверх глазури.</p>
+                    </div>
+                    <div class="questions-item" data-category="delivery">
+                        <div class="questions-item-title">
+                            <p>Как осуществляется доставка и сколько она стоит?</p>
+                            <button class="arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                        </div>
+                        <p class="questions-item-text hidden">Отправка музыкальной шкатулки осущетсвляется через следующие службы доставки: Почта России, СДЭК, Boxberry, ЯндексМаркет.
+                            Выбор почтовой службы доступен при оформлении заказа.<br>Стоимость расчитывается индивидуально для каждого заказа, исходя из&nbsp;расположения получателя.</p>
+                    </div>
+                    <div class="questions-item"data-category="guarantee">
+                        <div class="questions-item-title">
+                            <p>Какая гарантия предоставляется на продукцию?</p>
+                            <button class="arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                        </div>
+                        <p class="questions-item-text hidden">На&nbsp;часовой механизм гарантия составляет 2&nbsp;года.
+                            Это гарантия того, что&nbsp;мелодия будет звучать чётко и&nbsp;без&nbsp;перебоев,
+                            а&nbsp;вращение балерины останется плавным. Если в&nbsp;течение этого времени возникнут неполадки, не&nbsp;связанные с&nbsp;падением
+                            или неправильным обращением, механизм будет заменён на&nbsp;новый.<br>На&nbsp;материалы и&nbsp;декоративное покрытие гарантия составляет
+                            1&nbsp;год. Она защищает от&nbsp;таких редких, но&nbsp;возможных производственных дефектов,&nbsp;как отслоение изящного золотого тиснения, сколы
+                            на&nbsp;фарфоровой фигурке (при условии, что они возникли в&nbsp;результате удара) или существенные повреждения защитного лака.</p>
+                    </div>
+                    <div class="questions-item" data-category="delivery">
+                        <div class="questions-item-title">
+                            <p>Как упаковываются шкатулки при отправке?</p>
+                            <button class="arrow"><img src="assets/images/icons/arrow.png" alt=""></button>
+                        </div>
+                        <p class="questions-item-text hidden">Каждую шкатулку мы&nbsp;готовим к&nbsp;путешествию, как драгоценный подарок. Каждое изделие бережно оборачивается в&nbsp;мягкую, бескислотную папиросную бумагу, чтобы уберечь золотое тиснение
+                            и&nbsp;фарфор от&nbsp;мельчайших царапин. Затем её&nbsp;надёжно фиксируют внутри индивидуального каркаса из&nbsp;плотного пенопласта
+                            или вспененного полиэтилена, который принимает на&nbsp;себя любой удар и&nbsp;вибрацию, не&nbsp;позволяя фигурке балерины даже пошатнуться.
+                            Шкатулка отправляется в&nbsp;уже подарочной коробке, строго зафиксированной по&nbsp;почтовым стандартам.
+                            Наша цель&nbsp;&mdash; чтобы, распаковывая коробку, Вы&nbsp;испытали
+                            то&nbsp;же волнение и&nbsp;восторг, как если&nbsp;бы выбирали шкатулку в&nbsp;самой изысканной лавке, найдя её&nbsp;в&nbsp;абсолютной сохранности.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="questions-form-container">
+                <img src="assets/images/mice.png" alt="mice" class="faq-mice-image"/>
+                <h3 class="section-title smaller">Не нашли ответ на свой вопрос?</h3>
+                <p class="questions-form-text">Мы всегда рады помочь!</p>
+                <p class="questions-form-text">Свяжитесь с нами, и мы ответим на Ваш вопрос в течение 24 часов</p>
+                <form class="questions-form">
+                    <div class="questions-form-row">
+                        <div class="questions-form-group questions-form-text">
+                            <label for="user-name">Ваше имя</label>
+                            <input id="user-name" type="text" placeholder="Введите Ваше имя">
+                        </div>
+                        <div class="questions-form-group questions-form-text">
+                            <label for="email">Ваш email</label>
+                            <input id="email" type="email" placeholder="Введите Ваш email">
+                        </div>
+                    </div>
+                    <div class="questions-form-group questions-form-text">
+                        <label for="review">Ваш вопрос</label>
+                        <textarea id="review" placeholder="Введите Ваш вопрос..."></textarea>
+                    </div>
+                    <button type="submit" class="questions-submit-btn questions-form-text">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <div class="footer">
+        <img src="assets/images/balka.png" alt="" class="footer-balka"/>
+        <div class="footer-logos-container">
+            <div class="footer-logo-container-left">
+                <a href="#">
+                    <img src="assets/images/logos/vhutein.png" alt="VHUTEIN" data-link="vhutein" class="footer-logo"/>
+                </a>
+                <a href="#">
+                    <img src="assets/images/logos/tg.png" alt="Telegram" data-link="tg" class="footer-logo"/>
+                </a>
+                <a href="#">
+                    <img src="assets/images/logos/vk.png" alt="VK" data-link="vk" class="footer-logo"/>
+                </a>
+            </div>
+            <img src="assets/images/logos/logo.png" class="ellipse blue footer-logo" data-link="logo" alt="logo"/>
+        </div>
+    </div>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/chose-mechanism.js"></script>
+    <script src="scripts/melody-player.js"></script>
+    <script src="scripts/product-info.js"></script>
+    <script src="scripts/show-modal.js"></script>
+    <script src="scripts/questions.js"></script>
+    <script src="scripts/icon-hovers.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</body>
+</html>

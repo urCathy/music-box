@@ -1,0 +1,152 @@
+.mechanism-container {
+    height: 100%;
+    padding-top: 180px;
+    width: 100%;
+}
+
+.mechanism-background{
+    position: absolute;
+    background-image: url("../assets/images/backgrounds/mechanism-bg.png");
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.mechanism-window {
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.gear-left {
+    position: absolute;
+    top: 570px;
+    left: -300px;
+    z-index: 9;
+}
+
+.gear-right {
+    position: absolute;
+    top: 670px;
+    left: 1350px;
+    z-index: 9;
+}
+
+.woods {
+    position: absolute;
+    z-index: 9;
+    pointer-events: none;
+}
+
+.mechanism-description {
+    position: absolute;
+    top: 1500px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    z-index: 101;
+}
+
+.mechanism-description-text {
+    position: relative;
+    top: 0;
+    font-family: Cormorant, sans-serif;
+    color: #1A1821;
+    font-size: 45px;
+    width: 30%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.mechanism-description-title {
+    font-weight: bold;
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+}
+
+.mechanism-description-text p {
+    margin: 10px;
+}
+
+.mechanism-description-img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 671px;
+    bottom: 0;
+    right: 200px;
+}
+
+.mechanism-description-img img {
+    position: absolute;
+}
+
+.moving-mouse-container {
+    position: absolute;
+    z-index: 10;
+}
+
+.moving-mouse-rope {
+    position: absolute;
+    z-index: 9;
+    left: 650px;
+    top: 40px;
+    height: 550px;
+}
+
+.moving-mouse {
+    position: absolute;
+    z-index: 9;
+    left: 520px;
+    top: 480px;
+}
+
+.moving-mouse-key {
+    position: absolute;
+    z-index: 8;
+    left: 510px;
+    top: 580px;
+}
+
+.main-point {
+    left: 600px;
+    top: 80px;
+    z-index: 200 !important;
+}
+
+.cylinder-point {
+    left: 660px;
+    top: 350px;
+    z-index: 20;
+}
+
+.comb-point {
+    left: 460px;
+    top: 400px;
+    z-index: 20;
+}
+
+.key-point {
+    left: 630px;
+    top: 520px;
+    z-index: 20;
+}
+
+.point:hover {
+    transform: scale(1.2);
+}
+
+.point {
+    width: fit-content;
+    height: fit-content;
+    transition: transform 0.2s;
+}
+
+.darker {
+    filter: brightness(40%)
+}

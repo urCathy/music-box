@@ -50,7 +50,7 @@
 .advantages-toy-palette-title {
     position: absolute;
     text-align: center;
-    transform: translateX(-45%);
+    transform: translateX(-41%);
     top: 850px
 }
 
@@ -97,7 +97,7 @@
 .advantages-toy-gift-title {
     position: absolute;
     text-align: center;
-    transform: translateX(-45%);
+    transform: translateX(-50%);
     top: 850px
 }
 

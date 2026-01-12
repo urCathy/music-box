@@ -72,7 +72,7 @@ body, html {
 .logo-center {
     position: absolute;
     top: 0;
-    left: 44%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 101;
     width: 197px;

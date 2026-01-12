@@ -7,7 +7,7 @@ const buyBtn = document.getElementById('modal-buy-btn')
 const buttons = document.querySelectorAll('.buying-good-item-button')
 
 buttons.forEach(button => {
-    const originalText = button.textContent;
+    const originalText = button.innerHTML;
 
     button.addEventListener('click', () => {
         modal.style.display = 'flex';
@@ -19,7 +19,7 @@ buttons.forEach(button => {
         button.textContent = "Купить";
     })
     button.addEventListener('mouseleave', () => {
-        button.textContent = originalText;
+        button.innerHTML = originalText;
     })
 })
 

@@ -50,7 +50,7 @@
 .advantages-toy-palette-title {
     position: absolute;
     text-align: center;
-    transform: translateX(-41%);
+    transform: translateX(-45%);
     top: 850px
 }
 
@@ -97,7 +97,7 @@
 .advantages-toy-gift-title {
     position: absolute;
     text-align: center;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
     top: 850px
 }
 
@@ -138,4 +138,35 @@
 
 .mouse.show {
     transform: translate(110%, 60%);
+}
+
+.arrow-info {
+    position: absolute;
+}
+
+.arrow-x {
+    transform: translate(250px);
+}
+
+.arrow-text {
+    position: absolute;
+    align-self: center;
+    font-size: 38px;
+    font-family: Cormorant, sans-serif;
+    color: #D9D9D9;
+}
+
+.arrow-text>span {
+    font-size: 35px;
+}
+
+.arrow-x-text {    
+    transform: translate(550px, -348px) rotate(2deg);
+}
+
+.arrow-y {
+    transform: translate(950px, 190px);
+}
+.arrow-y-text {
+    transform: translate(983px, 50px) rotate(-1deg);
 }
